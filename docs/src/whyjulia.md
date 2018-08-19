@@ -1,3 +1,7 @@
+```@raw html 
+<img src = "https://commons.wikimedia.org/wiki/File:Julia_prog_language.svg" width="100%">
+```
+
 # [0. Why Julia](@id why-julia)
 
 If you are interested of why Julia exists at all, a good read by its creators is here:
