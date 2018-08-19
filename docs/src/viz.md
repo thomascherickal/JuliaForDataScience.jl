@@ -24,19 +24,19 @@ For the full Plots documentation, click [here](http://docs.juliaplots.org/latest
 
 Plots is super powerful, but requires learning some core components of how it works:
 
-!!! Note 
-    Arguments are passed column-wise
 
-    Notice that the `label` argument is a 1×3 Matrix (and not a Vector).  Each column of `label` is then mapped
-    to the respective column of `x` as its label.
+### Arguments are passed column-wise
 
-    ```@example viz
-    x = [(sin(i) + j) for i in 1:10, j in 1:3]
+Notice that the `label` argument is a 1×3 Matrix (and not a Vector).  Each column of `label` is then mapped
+to the respective column of `x` as its label.
 
-    plot(x, label = ["one" "two" "three"])
-    png("columnwise.png") # hide
-    ```
-    ![](columnwise.png)
+```@example viz
+x = [(sin(i) + j) for i in 1:10, j in 1:3]
+
+plot(x, label = ["one" "two" "three"])
+png("columnwise.png") # hide
+```
+![](columnwise.png)
 
 ### Arguments have aliases
 
