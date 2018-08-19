@@ -4,9 +4,9 @@ ENV["GKSwstype"] = "100"
 gr()
 ```
 
-# 3. Data Visualization
+# 2. Data Visualization
 
-## 3.1 Intro
+## 2.1 Intro
 
 There are several plotting packages in Julia, but in this book we will focus on 
 [Plots.jl](https://github.com/JuliaPlots/Plots.jl).  Plots wraps an intuitive interface 
@@ -18,7 +18,7 @@ The backends we'll use in this section are [GR.jl](https://github.com/jheinen/GR
 
 For the full Plots documentation, click [here](http://docs.juliaplots.org/latest/).
 
-## 3.2 The Plots Interface
+## 2.2 The Plots Interface
 
 ```@example viz
 y = randn(50)

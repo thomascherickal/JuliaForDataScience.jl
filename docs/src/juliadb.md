@@ -1,4 +1,4 @@
-# 2. Tabular Data
+# 3. Tabular Data
 
 There are multiple tabular data packages in Julia.  In this book we will focus on 
 [JuliaDB](https://github.com/JuliaComputing/JuliaDB.jl), which provides type-stable 
