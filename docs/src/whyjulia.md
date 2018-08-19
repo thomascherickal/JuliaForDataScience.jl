@@ -18,12 +18,13 @@ If you are interested of why Julia exists at all, a good read by its creators is
 
 - A function can be written on a single line or multiple lines.
 
-```
+```@example
 f(x) = x + x
 
 function f(x)
     x + x
 end
+#hide
 ```
 
 - The example above has one **positional** argument.  A Julia function can also have 
@@ -35,10 +36,12 @@ function f(x, y; operation = +)
 end
 
 f(1, 1)
+#hide
 ```
 
 ```@example keyword
 f(2, 1, operation = -)
+#hide
 ```
 
 - You can provide **type annotations** to limit what argument types the function accepts 
@@ -50,6 +53,7 @@ doesn't get used for something it's not meant to do (e.g. subtract a `Number` fr
 f(x::Int, y::Int) = x + y
 
 f(1, 1)
+#hide
 ```
 
 ## 0.2 Multiple Dispatch
@@ -58,21 +62,14 @@ Julia programs are centered around **multiple dispatch**, the idea that differen
 called depending on the types of the arguments.  Julia compiles a different **method** for each
 set of types an argument gets called with.
 
-```@example code_llvm
+```@repl code_llvm
 add_to_itself(x) = x + x
 ```
 
-- An `add_to_itself` method for `Int`. 
-
-```@example code_llvm
+```@repl code_llvm
 using InteractiveUtils
 
-@code_llvm add_to_itself(1)
+@code_llvm add_to_itself(1)  # add_to_itself method for Int
+
+@code_llvm add_to_itself(1.0)  # add_to_itself method for Float64
 ```
-
-- An `add_to_itself` method for `Float64`. 
-
-```@example code_llvm
-@code_llvm add_to_itself(1.0)
-```
-
