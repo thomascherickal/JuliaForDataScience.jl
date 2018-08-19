@@ -1,17 +1,21 @@
 using Documenter, JuliaForDataScience
 
 makedocs(
-    format = :html,
+    format = [:html],
     modules = [JuliaForDataScience],
     sitename = "Julia For Data Science",
+    authors = ["Josh Day"],
+    clean = true,
     pages = [
         "intro.md"
     ]
 )
 
 deploydocs(
-    repo   = "github.com/USER/PKG.jl.git",
+    repo = "github.com/joshday/JuliaForDataScience.jl.git",
+    julia = "1.0",
     target = "build",
-    deps   = nothing,
-    make   = nothing
+    osname = "linux",
+    deps = nothing,
+    make = nothing
 )
