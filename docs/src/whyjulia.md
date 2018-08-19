@@ -1,1 +1,1 @@
-# 0. Why Julia
+# [0. Why Julia](@id whyjulia)
