@@ -1,6 +1,4 @@
-```@raw html 
-<img src = "https://commons.wikimedia.org/wiki/File:Julia_prog_language.svg" width="100%">
-```
+![](https://julialang.org/v2/img/logo.svg)
 
 # [0. Why Julia](@id why-julia)
 
