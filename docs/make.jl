@@ -5,7 +5,8 @@ makedocs(
     sitename = "Julia For Data Science",
     authors = "Josh Day",
     clean = true,
-    pages = Any[
+    pages = [
+        "index.md",
         "whyjulia.md",
         "intro.md",
         "juliadb.md",
