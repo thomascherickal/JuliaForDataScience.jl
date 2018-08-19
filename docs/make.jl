@@ -7,7 +7,7 @@ makedocs(
     clean = true,
     pages = [
         "whyjulia.md",
-        "Introduction" => "index.md",
+        "index.md",
         "juliadb.md",
         "viz.md"
     ]
