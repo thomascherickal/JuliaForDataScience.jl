@@ -21,4 +21,10 @@ well as understand Julia concepts at the level discussed in [0. Why Julia](@ref 
 ## Table of Contents
 
 ```@contents
+Pages = [
+    "whyjulia.md",
+    "index.md",
+    "juliadb.md",
+    "viz.md"
+]
 ```
