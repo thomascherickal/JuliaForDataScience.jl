@@ -2,7 +2,6 @@ using Documenter, JuliaForDataScience
 
 makedocs(
     format = [:html],
-    modules = [JuliaForDataScience],
     sitename = "Julia For Data Science",
     authors = "Josh Day",
     clean = true,
