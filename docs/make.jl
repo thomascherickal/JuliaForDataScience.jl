@@ -6,9 +6,8 @@ makedocs(
     authors = "Josh Day",
     clean = true,
     pages = [
-        "index.md",
         "whyjulia.md",
-        "intro.md",
+        "Introduction" => "index.md",
         "juliadb.md",
         "viz.md"
     ]
