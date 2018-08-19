@@ -16,7 +16,7 @@ The backends we'll use in this section are [GR.jl](https://github.com/jheinen/GR
 
 ## 3.2 The Plots Interface
 
-```@example
+```@example viz
 y = randn(50)
 
 plot(y)
