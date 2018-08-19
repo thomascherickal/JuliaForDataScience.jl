@@ -4,9 +4,9 @@ makedocs(
     format = [:html],
     modules = [JuliaForDataScience],
     sitename = "Julia For Data Science",
-    authors = ["Josh Day"],
+    authors = "Josh Day",
     clean = true,
-    pages = [
+    pages = Any[
         "intro.md"
     ]
 )
