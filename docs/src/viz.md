@@ -1,10 +1,12 @@
 ```@setup viz
 using Plots
+ENV["GKSwstype"] = "100"
+gr()
 ```
 
 # 3. Data Visualization
 
-## 3.1 Plots.jl
+## 3.1 Intro
 
 There are several plotting packages in Julia, but in this book we will focus on 
 [Plots.jl](https://github.com/JuliaPlots/Plots.jl).  Plots wraps an intuitive interface 
@@ -13,6 +15,8 @@ to an interactive javascript plot without changing your code.
 
 The backends we'll use in this section are [GR.jl](https://github.com/jheinen/GR.jl) and 
 [https://plot.ly](https://plot.ly), both of which come installed with Plots.
+
+For the full Plots documentation, click [here](http://docs.juliaplots.org/latest/).
 
 ## 3.2 The Plots Interface
 
@@ -25,7 +29,3 @@ png("viz_ex1.png")  # hide
 ```
 
 ![](viz_ex1.png)
-
-## 3.x Additional Resources
-
-- [Plots Official Documentation](http://docs.juliaplots.org/latest/)
