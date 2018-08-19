@@ -8,7 +8,8 @@ makedocs(
     clean = true,
     pages = Any[
         "intro.md",
-        "Data Tables" => "juliadb.md"
+        "juliadb.md",
+        "viz.md"
     ]
 )
 
