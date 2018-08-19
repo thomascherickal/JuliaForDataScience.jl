@@ -7,7 +7,8 @@ makedocs(
     authors = "Josh Day",
     clean = true,
     pages = Any[
-        "intro.md"
+        "intro.md",
+        "Data Tables" => "juliadb.md"
     ]
 )
 
