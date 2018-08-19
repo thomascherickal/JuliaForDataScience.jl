@@ -7,6 +7,7 @@ makedocs(
     authors = "Josh Day",
     clean = true,
     pages = Any[
+        "whyjulia.md",
         "intro.md",
         "juliadb.md",
         "viz.md"
@@ -16,8 +17,6 @@ makedocs(
 deploydocs(
     repo = "github.com/joshday/JuliaForDataScience.jl.git",
     julia = "1.0",
-    target = "build",
-    osname = "linux",
     deps = nothing,
     make = nothing
 )
