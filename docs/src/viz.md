@@ -16,6 +16,16 @@ The backends we'll use in this section are [GR.jl](https://github.com/jheinen/GR
 
 ## 3.2 The Plots Interface
 
+```@example
+y = randn(50)
+
+plot(y)
+
+png("viz_ex1.png")  # hide
+```
+
+![](viz_ex1.png)
+
 ## 3.x Additional Resources
 
 - [Plots Official Documentation](http://docs.juliaplots.org/latest/)
