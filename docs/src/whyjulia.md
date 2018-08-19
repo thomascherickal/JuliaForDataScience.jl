@@ -1,4 +1,4 @@
-![](https://julialang.org/v2/img/logo.svg)
+![](https://github.com/JuliaGraphics/julia-logo-graphics/raw/master/images/julia-logo-325-by-225.png)
 
 # [0. Why Julia](@id why-julia)
 
@@ -9,7 +9,6 @@ If you are interested of why Julia exists at all, a good read by its creators is
 ## 0.1 Getting Started
 
 ### Types
-
 
 
 ### Functions 

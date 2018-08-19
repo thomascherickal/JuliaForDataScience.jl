@@ -15,15 +15,30 @@ There are several plotting packages in Julia, but in this book we will focus on
 around multiple plotting backends, allowing you to switch from a fast-rendering static plot 
 to an interactive javascript plot without changing your code.
 
-The backends we'll use in this section are [GR.jl](https://github.com/jheinen/GR.jl) and 
+The backends we'll use in this chapter are [GR.jl](https://github.com/jheinen/GR.jl) and 
 [https://plot.ly](https://plot.ly), both of which come installed with Plots.
 
 For the full Plots documentation, click [here](http://docs.juliaplots.org/latest/).
 
-## 2.2 The Plots Interface 
+## 2.2 The Plots.jl Way 
 
-Plots is super powerful, but requires learning some core components of how it works:
+Plots is super powerful, but requires learning some core components of how it works.  It relies
+heavily on multiple dispatch and easy-to-use conventions.
 
+
+### Each type of plot has its own `seriestype`
+
+The type of plot is defined by the `seriestype`.  Calling a function 
+
+```
+scatter(x)
+```
+
+is simply a shortcut for 
+
+```
+plot(x, seriestype = :scatter)
+```
 
 ### Arguments are passed column-wise
 
@@ -71,17 +86,4 @@ png("magic.png")  # hide
 ```
 ![](magic.png)
 
-### Series Types
-
-The type of plot is defined by the `seriestype`.  Calling a function 
-
-```
-scatter(x)
-```
-
-is simply a shortcut for 
-
-```
-plot(x, seriestype = :scatter)
-```
-
+# 2.3
