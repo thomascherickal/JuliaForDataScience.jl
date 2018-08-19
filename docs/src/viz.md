@@ -18,11 +18,29 @@ The backends we'll use in this section are [GR.jl](https://github.com/jheinen/GR
 
 For the full Plots documentation, click [here](http://docs.juliaplots.org/latest/).
 
-## 2.2 The Plots Interface
+## 2.2 The Plots Interface 
+
+Plots is super powerful, but requires learning some core components of how it works:
+
+### Arguments are passed column-wise
+
+Notice that the `labels` argument is a 1×3 Matrix.  Each column of `labels` is then mapped
+to the respective column of `x` as the label.
+
+```@example viz
+x = randn(10, 3)
+
+plot(x, 3, labels = ["one" "two" "three])
+png("columnwise.png") #hide
+```
+![](columnwise.png)
+
+### Arguments have aliases
+
 
 ### Series Types
 
-Plots depends heavily on multiple dispatch.
+The type of plot is defined by the `seriestype`
 
 ```@example viz
 y = randn(50)

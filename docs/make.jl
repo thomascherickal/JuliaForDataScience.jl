@@ -8,8 +8,8 @@ makedocs(
     pages = [
         "whyjulia.md",
         "index.md",
-        "juliadb.md",
-        "viz.md"
+        "viz.md",
+        "juliadb.md"
     ]
 )
 
