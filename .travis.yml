@@ -6,6 +6,6 @@ julia:
 notifications:
   email: true
 after_success:
-  - julia -e 'import Pkg; Pkg.pkg"add Documenter")'
+  - julia -e 'import Pkg; Pkg.pkg"add Documenter"'
   - julia -e 'import JuliaForDataScience; include(joinpath(pathof(JuliaForDataScience), "..", "..", "docs", "make.jl"))'
   # - julia -e 'import Pkg; cd(Pkg.dir("JuliaForDataScience")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
