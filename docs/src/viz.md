@@ -20,11 +20,14 @@ For the full Plots documentation, click [here](http://docs.juliaplots.org/latest
 
 ## 2.2 The Plots Interface
 
+### Series Types
+
+Plots depends heavily on multiple dispatch.
+
 ```@example viz
 y = randn(50)
 
 plot(y)
-
 png("viz_ex1.png")  # hide
 ```
 

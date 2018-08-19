@@ -61,6 +61,8 @@ add_to_itself(x) = x + x
 - An `add_to_itself` method for `Int`. 
 
 ```@example code_llvm
+using InteractiveUtils
+
 @code_llvm add_to_itself(1)
 ```
 
