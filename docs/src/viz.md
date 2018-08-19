@@ -49,16 +49,36 @@ png("aliases.png") # hide
 ```
 ![](aliases.png)
 
+### Some arguments are "magic"
+
+There are some magic arguments like `marker` for which you can provide a tuple of different-typed
+things, that will get intelligently mapped to other arguments based on their type.
+
+```@example viz 
+p1 = plot(x)
+
+p2 = plot(x, marker = (1:10, :blue, .2))  # set size, color, and alpha
+
+p3 = plot(x, marker = :auto)
+
+p4 = plot(x, linestyle = :auto)
+
+plot(p1, p2, p3, p4)
+png("magic.png")  # hide
+```
+![](magic.png)
 
 ### Series Types
 
-The type of plot is defined by the `seriestype`
+The type of plot is defined by the `seriestype`.  Calling a function 
 
-```@example viz
-y = randn(50)
-
-plot(y)
-png("viz_ex1.png")  # hide
+```
+scatter(x)
 ```
 
-![](viz_ex1.png)
+is simply a shortcut for 
+
+```
+plot(x, seriestype = :scatter)
+```
+
