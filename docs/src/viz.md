@@ -24,18 +24,30 @@ Plots is super powerful, but requires learning some core components of how it wo
 
 ### Arguments are passed column-wise
 
-Notice that the `labels` argument is a 1×3 Matrix.  Each column of `labels` is then mapped
-to the respective column of `x` as the label.
+Notice that the `label` argument is a 1×3 Matrix (and not a Vector).  Each column of `label` is then mapped
+to the respective column of `x` as its label.
 
 ```@example viz
-x = randn(10, 3)
+x = [(sin(i) + j) for i in 1:10, j in 1:3]
 
-plot(x, 3, labels = ["one" "two" "three])
-png("columnwise.png") #hide
+plot(x, label = ["one" "two" "three"])
+png("columnwise.png") # hide
 ```
 ![](columnwise.png)
 
 ### Arguments have aliases
+
+Aliases are useful for generating plots quickly for one-off analyses.  For clarity, they should
+be left out of reproducible code, but they are great for iterating on a plot until you get 
+the visualization you want.
+
+```@example viz
+p1 = plot(x, lab = [1 2 3])
+p2 = plot(x, label = ["1" "2" "3"])
+plot(p1, p2)
+png("aliases.png") # hide
+```
+![](aliases.png)
 
 
 ### Series Types
