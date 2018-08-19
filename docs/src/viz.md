@@ -1,3 +1,7 @@
+```@setup viz
+using Plots
+```
+
 # 3. Data Visualization
 
 ## 3.1 Plots.jl
@@ -12,3 +16,6 @@ The backends we'll use in this section are [GR.jl](https://github.com/jheinen/GR
 
 ## 3.2 The Plots Interface
 
+## 3.x Additional Resources
+
+- [Plots Official Documentation](http://docs.juliaplots.org/latest/)
