@@ -9,7 +9,7 @@ using Plots
 
 ## 1.1 Prerequisites 
 
-This book makes the assumption that you are familiar with some general programming terms as well as understand Julia concepts at the level discussed in [`whyjulia`](@ref).  
+This book makes the assumption that you are familiar with some general programming terms as well as understand Julia concepts at the level discussed in section 0.  
 
 ## 1.2 Acknowledgements
 
