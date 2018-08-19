@@ -7,7 +7,8 @@ using Plots
 
 # 1. Introduction 
 
-
+This book exists to help newcomers to Julia learn about how to "do data science".  Being a 
+general term, we aim to cover a lot of material, not all of which will be useful to you.  
 
 ## 1.1 Prerequisites 
 
