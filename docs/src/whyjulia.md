@@ -26,7 +26,7 @@ is_open_source(::Python) = true
 fast_for_loops(::Python) = false
 
 
-langs = subtypes(Language)
+langs = [Julia, Matlab, R, Python]
 parts = [is_open_source, fast_for_loops]
 heatmap(string.(langs), string.(parts), [p(l()) for p in parts, l in langs], legend=false, color=:coolwarm_r)
 png("languages.png")
