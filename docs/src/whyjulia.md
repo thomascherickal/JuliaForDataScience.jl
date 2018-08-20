@@ -1,5 +1,5 @@
 ```@setup viz
-using Plots
+using Plots, InteractiveUtils
 ENV["GKSwstype"] = "100"
 gr()
 ```
