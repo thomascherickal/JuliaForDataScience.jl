@@ -34,7 +34,7 @@ fast_for_loops(::Python) = false
 
 langs = subtypes(Language)
 parts = [is_open_source, fast_for_loops]
-heatmap(string.(langs), string.(parts), [p(l()) for p in parts, l in langs], legend=false, color=:blues)
+heatmap(string.(langs), string.(parts), [p(l()) for p in parts, l in langs], legend=false, color=:coolwarm_r)
 ```
 
 
