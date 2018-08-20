@@ -8,6 +8,35 @@ If you are interested in why Julia exists at all, a good read by its creators is
 The reason(s) that you should use Julia for data science is a different story.  If you're reading
 this, it's likely that you are coming from another language like R, Matlab, or Python.
 
+```@example
+abstract type Language end 
+
+# Julia
+struct Julia <: Language end
+is_open_source(::Julia) = true
+fast_for_loops(::Julia) = true
+
+# Matlab
+struct Matlab <: Language end 
+is_open_source(::Matlab) = false
+fast_for_loops(::Matlab) = false
+
+# R
+struct R <: Language end 
+is_open_source(::R) = true
+fast_for_loops(::R) = false
+
+# Python
+struct Python <: Language end
+is_open_source(::Python) = true
+fast_for_loops(::Python) = false
+
+
+langs = subtypes(Language)
+parts = [is_open_source, fast_for_loops]
+heatmap(string.(langs), string.(parts), [p(l()) for p in parts, l in langs], legend=false, color=:blues)
+```
+
 
 ## 0.1 Getting Started
 

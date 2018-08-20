@@ -1,9 +1,3 @@
-```@setup viz
-using Plots
-ENV["GKSwstype"] = "100"
-gr()
-```
-
 # 1. Introduction 
 
 This book exists to help people using Julia for data science.  As *data science* is a 

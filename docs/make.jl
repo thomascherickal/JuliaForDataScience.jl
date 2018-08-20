@@ -1,5 +1,9 @@
 using Documenter, JuliaForDataScience
 
+using Plots
+ENV["GKSwstype"] = "100"
+gr()
+
 makedocs(
     format = [:html],
     sitename = "Julia For Data Science",

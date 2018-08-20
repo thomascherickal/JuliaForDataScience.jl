@@ -39,7 +39,7 @@ plot(x, seriestype = :scatter)
 Notice that the `label` argument is a 1×3 Matrix (and not a Vector).  Each column of `label` is then mapped
 to the respective column of `x` as its label.
 
-```@example viz
+```@example
 x = [(sin(i) + j) for i in 1:10, j in 1:3]
 
 plot(x, label = ["one" "two" "three"])
@@ -53,7 +53,7 @@ Aliases are useful for generating plots quickly for one-off analyses.  For clari
 be left out of reproducible code, but they are great for iterating on a plot until you get 
 the visualization you want.
 
-```@example viz
+```@example
 p1 = plot(x, lab = [1 2 3])
 p2 = plot(x, label = ["1" "2" "3"])
 plot(p1, p2)
@@ -66,7 +66,7 @@ png("aliases.png") # hide
 There are some magic arguments like `marker` for which you can provide a tuple of different-typed
 things, that will get intelligently mapped to other arguments based on their type.
 
-```@example viz 
+```@example 
 p1 = plot(x)
 
 p2 = plot(x, marker = (1:10, :blue, .2))  # set size, color, and alpha
