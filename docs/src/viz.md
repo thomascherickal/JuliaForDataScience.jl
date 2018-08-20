@@ -1,9 +1,3 @@
-```@setup viz
-using Plots
-ENV["GKSwstype"] = "100"
-gr()
-```
-
 ![](http://docs.juliaplots.org/latest/examples/img/lorenz.gif)
 
 # 2. Data Visualization

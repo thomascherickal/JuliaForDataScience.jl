@@ -2,8 +2,11 @@
 
 # [0. Why Julia](@id why-julia)
 
-If you are interested of why Julia exists at all, a good read by its creators is here:
+If you are interested in why Julia exists at all, a good read by its creators is here:
 [Why We Created Julia](https://julialang.org/blog/2012/02/why-we-created-julia).
+
+The reason(s) that you should use Julia for data science is a different story.  If you're reading
+this, it's likely that you are coming from another language like R, Matlab, or Python.
 
 
 ## 0.1 Getting Started

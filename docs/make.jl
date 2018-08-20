@@ -9,7 +9,7 @@ makedocs(
         "whyjulia.md",
         "index.md",
         "viz.md",
-        "juliadb.md",
+        "tabular.md",
         "interact.md"
     ]
 )
