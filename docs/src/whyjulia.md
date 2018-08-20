@@ -2,19 +2,7 @@
 using Plots, InteractiveUtils
 ENV["GKSwstype"] = "100"
 gr()
-```
 
-![](https://github.com/JuliaGraphics/julia-logo-graphics/raw/master/images/julia-logo-325-by-225.png)
-
-# [0. Why Julia](@id why-julia)
-
-If you are interested in why Julia exists at all, a good read by its creators is here:
-[Why We Created Julia](https://julialang.org/blog/2012/02/why-we-created-julia).
-
-The reason(s) that you should use Julia for data science is a different story.  If you're reading
-this, it's likely that you are coming from another language like R, Matlab, or Python.
-
-```@example viz
 abstract type Language end 
 
 # Julia
@@ -41,8 +29,20 @@ fast_for_loops(::Python) = false
 langs = subtypes(Language)
 parts = [is_open_source, fast_for_loops]
 heatmap(string.(langs), string.(parts), [p(l()) for p in parts, l in langs], legend=false, color=:coolwarm_r)
+png("languages.png")
 ```
 
+![](https://github.com/JuliaGraphics/julia-logo-graphics/raw/master/images/julia-logo-325-by-225.png)
+
+# [0. Why Julia](@id why-julia)
+
+If you are interested in why Julia exists at all, a good read by its creators is here:
+[Why We Created Julia](https://julialang.org/blog/2012/02/why-we-created-julia).
+
+The reason(s) that you should use Julia for data science is a different story.  If you're reading
+this, it's likely that you are coming from another language like R, Matlab, or Python.
+
+![](languages.png)
 
 ## 0.1 Getting Started
 
