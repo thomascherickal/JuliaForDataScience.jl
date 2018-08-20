@@ -1,3 +1,9 @@
+```@setup viz
+using Plots
+ENV["GKSwstype"] = "100"
+gr()
+```
+
 ![](https://github.com/JuliaGraphics/julia-logo-graphics/raw/master/images/julia-logo-325-by-225.png)
 
 # [0. Why Julia](@id why-julia)
@@ -8,7 +14,7 @@ If you are interested in why Julia exists at all, a good read by its creators is
 The reason(s) that you should use Julia for data science is a different story.  If you're reading
 this, it's likely that you are coming from another language like R, Matlab, or Python.
 
-```@example
+```@example viz
 abstract type Language end 
 
 # Julia
