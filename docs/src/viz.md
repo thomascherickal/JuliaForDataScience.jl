@@ -49,9 +49,9 @@ to the respective column of `x` as its label.
 x = [(sin(i) + j) for i in 1:10, j in 1:3]
 
 plot(x, label = ["one" "two" "three"])
-png("columnwise.png") # hide
+svg("columnwise.svg") # hide
 ```
-![](columnwise.png)
+![](columnwise.svg)
 
 ### Arguments have aliases
 
@@ -63,9 +63,9 @@ the visualization you want.
 p1 = plot(x, lab = [1 2 3])
 p2 = plot(x, label = ["1" "2" "3"])
 plot(p1, p2)
-png("aliases.png") # hide
+svg("aliases.svg") # hide
 ```
-![](aliases.png)
+![](aliases.svg)
 
 ### Some arguments are "magic"
 
@@ -82,8 +82,8 @@ p3 = plot(x, marker = :auto)
 p4 = plot(x, linestyle = :auto)
 
 plot(p1, p2, p3, p4)
-png("magic.png")  # hide
+svg("magic.svg")  # hide
 ```
-![](magic.png)
+![](magic.svg)
 
 # 2.3
