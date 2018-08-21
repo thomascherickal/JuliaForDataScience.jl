@@ -1,5 +1,6 @@
 ```@setup viz
 using Plots
+using Plots: svg
 ENV["GKSwstype"] = "100"
 gr()
 ```
@@ -86,4 +87,39 @@ svg("magic.svg")  # hide
 ```
 ![](magic.svg)
 
-# 2.3
+## 2.3 Bivariate Relationships: Continuous X with Continuous Y 
+
+### Scatterplot 
+
+```@example viz 
+x = randn(100, 2)
+
+scatter(x)
+
+svg("scatterplot.svg")  # hide
+```
+![](scatterplot.svg)
+
+## 2.4 Bivariate Relationships: Continuous X with Categorical Y
+
+## 2.5 Bivariate Relationships: Categorical X with Categorical Y 
+
+### Mosaic Plot 
+
+```@example viz
+using OnlineStats
+
+x = rand(Bool, 1000)
+y = rand(1:5, 1000)
+
+o = fit!(MosiacPlot(Bool, Int), zip(x,y))
+
+plot(o)
+
+svg("mosiac.svg")  # hide
+```
+![](mosaic.svg)
+
+## 2.6 Bivariate Relationships: Categorical X with Continuous Y
+
+
