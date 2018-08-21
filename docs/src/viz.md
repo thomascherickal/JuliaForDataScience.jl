@@ -3,6 +3,7 @@ using Plots
 using Plots: svg
 ENV["GKSwstype"] = "100"
 gr()
+using OnlineStats
 ```
 
 ![](http://docs.juliaplots.org/latest/examples/img/lorenz.gif)
@@ -100,6 +101,7 @@ svg("scatterplot.svg")  # hide
 ```
 ![](scatterplot.svg)
 
+
 ## 2.4 Bivariate Relationships: Continuous X with Categorical Y
 
 ## 2.5 Bivariate Relationships: Categorical X with Categorical Y 
@@ -107,8 +109,6 @@ svg("scatterplot.svg")  # hide
 ### Mosaic Plot 
 
 ```@example viz
-using OnlineStats
-
 x = rand(Bool, 1000)
 y = rand(1:5, 1000)
 

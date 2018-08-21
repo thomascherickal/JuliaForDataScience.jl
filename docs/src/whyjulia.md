@@ -1,5 +1,6 @@
 ```@setup viz
 using Plots, InteractiveUtils
+using Plots: svg
 ENV["GKSwstype"] = "100"
 gr()
 
