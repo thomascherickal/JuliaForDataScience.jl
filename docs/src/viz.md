@@ -91,7 +91,6 @@ svg("magic.svg")  # hide
 ## 2.3 Bivariate Relationships: Continuous X with Continuous Y 
 
 ### Scatterplot 
-
 ```@example viz 
 x = randn(100, 2)
 
@@ -101,6 +100,19 @@ svg("scatterplot.svg")  # hide
 ```
 ![](scatterplot.svg)
 
+### Heatmaps and Countours
+```@example viz 
+x = [i*j for i in 1:20, j in 1:20]
+
+p1 = heatmap(x)
+
+p2 = contour(x, levels=20, fill=true)
+
+plot(p1, p2)
+
+svg("heatmap.svg")  # hide 
+```
+![](heatmap.svg)
 
 ## 2.4 Bivariate Relationships: Continuous X with Categorical Y
 
@@ -112,7 +124,7 @@ svg("scatterplot.svg")  # hide
 x = rand(Bool, 1000)
 y = rand(1:5, 1000)
 
-o = fit!(MosiacPlot(Bool, Int), zip(x,y))
+o = fit!(Mosiac(Bool, Int), zip(x,y))
 
 plot(o)
 
