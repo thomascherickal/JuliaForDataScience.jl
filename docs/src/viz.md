@@ -100,7 +100,7 @@ svg("scatterplot.svg")  # hide
 ```
 ![](scatterplot.svg)
 
-### Heatmaps and Countours
+### Heatmaps and Contours
 ```@example viz 
 x = [i*j for i in 1:20, j in 1:20]
 
@@ -126,7 +126,7 @@ using OnlineStats
 x = rand(Bool, 1000)
 y = rand(1:5, 1000)
 
-o = fit!(Mosiac(Bool, Int), zip(x,y))
+o = fit!(Mosaic(Bool, Int), zip(x,y))
 
 plot(o)
 
