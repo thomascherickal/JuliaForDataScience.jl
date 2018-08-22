@@ -121,6 +121,8 @@ svg("heatmap.svg")  # hide
 ### Mosaic Plot 
 
 ```@example viz
+using OnlineStats
+
 x = rand(Bool, 1000)
 y = rand(1:5, 1000)
 
@@ -128,7 +130,7 @@ o = fit!(Mosiac(Bool, Int), zip(x,y))
 
 plot(o)
 
-svg("mosiac.svg")  # hide
+svg("mosaic.svg")  # hide
 ```
 ![](mosaic.svg)
 
