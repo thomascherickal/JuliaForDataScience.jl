@@ -36,7 +36,7 @@ Pages = [
     "whyjulia.md",
     "index.md",
     "viz.md",
-    "juliadb.md"
+    "tabular.md"
 ]
 Depth = 1
 ```
