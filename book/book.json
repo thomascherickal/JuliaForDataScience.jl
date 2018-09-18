@@ -1,3 +1,6 @@
 {
-    "title": "Julia for Data Science"
+    "title": "Julia for Data Science",
+    "plugins": [
+        "page-numbering"
+    ]
 }
