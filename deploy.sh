@@ -8,7 +8,7 @@ git checkout --orphan gh-pages
 # make book
 julia -e "include(\"make.jl\")"
 gitbook build book/build
-cp -r book/build/_book .
+mv book/build/_book/* .
 
 # commit book
 git add .
