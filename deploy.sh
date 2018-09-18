@@ -14,4 +14,4 @@ cp -r book/build/_book .
 git add .
 git commit -m "Book built on `date`"
 git push --set-upstream origin gh-pages
-git checkout dev
+git checkout master
