@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/joshday/JuliaForDataScience.jl.svg?branch=master)](https://travis-ci.org/joshday/JuliaForDataScience.jl)
-[![](https://img.shields.io/badge/docs-latest-blue.svg)](https://joshday.github.io/JuliaForDataScience.jl/latest)
+# Julia for Data Science
 
-# Julia For Data Science
+Welcome to *Julia for Data Science*.
