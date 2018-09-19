@@ -1,5 +1,6 @@
 # Table of Contents
 
-* [**1** Introduction](01-whyjulia.md)
-* [**2** Why Julia](02-juliabasics.md)
+* [Introduction](README.md)
+* [**1** Why Julia?](01-whyjulia.md)
+* [**2** Julia Basics](02-juliabasics.md)
 * [**3** Data Visualization](03-visualization.md)
