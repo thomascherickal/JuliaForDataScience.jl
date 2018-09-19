@@ -7,6 +7,19 @@ To that end, only packages that are well supported in Julia 1.0 will be covered.
 
 # Help Write This Book
 
+This book uses [Reproducible.jl](https://github.com/joshday/Reproducible.jl) to generate markdown
+files with interpolated code blocks.  These files are then sent to [GitBook](https://www.gitbook.com),
+which generates the website.
+
 [![Build Status](https://travis-ci.org/joshday/JuliaForDataScience.jl.svg?branch=master)](https://travis-ci.org/joshday/JuliaForDataScience.jl)
 
+
+## Simple Edits
+
 Click the "Edit on GitHub" button and make a pull request!
+
+## Bigger Edits
+
+To generate the markdown with interpolated code, run the following in the git repo's root directory. 
+
+`julia -e 'using Reproducible, Glob; Reproducible.build(glob("*.md"))'`

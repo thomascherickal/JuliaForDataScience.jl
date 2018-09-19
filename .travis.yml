@@ -6,7 +6,7 @@ julia:
 notifications:
   email: true
 script:
-  - julia -e 'import Pkg; Pkg.add("Glob"); Pkg.clone("https://github.com/joshday/Reproducible.jl")'
+  - julia -e 'import Pkg; Pkg.clone("https://github.com/joshday/Reproducible.jl")'
   - julia -e 'using Reproducible, Glob; Reproducible.build(glob("*.md"))'
 deploy:
   provider: pages
