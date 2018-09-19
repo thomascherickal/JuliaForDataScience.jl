@@ -2,8 +2,10 @@
     "title": "Julia for Data Science",
     "plugins": [
         "numbered-headings",
-        "page-numbering",
         "folding-menu",
         "katex"
-    ]
+    ],
+    "theme-default": {
+        "showLevel": false
+    }
 }
