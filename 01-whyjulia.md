@@ -1,7 +1,5 @@
 ![](https://github.com/JuliaGraphics/julia-logo-graphics/raw/master/images/julia-logo-325-by-225.png)
 
-# Why Julia?
-
 If you are interested in how and why Julia exists at all, a good read by its creators is here:
 [Why We Created Julia](https://julialang.org/blog/2012/02/why-we-created-julia).  Below is 
 an excerpt:
@@ -16,16 +14,16 @@ made Julia:
 
 **Come for the speed, stay for the productivity.**
 
-## Julia is...
+# Julia is...
 
-### Fast
+## Fast
 
-### Dynamic
+## Dynamic
 
-### Optionally Typed
+## Optionally Typed
 
-### General
+## General
 
-### Technical
+## Technical
 
-### Composable
+## Composable
