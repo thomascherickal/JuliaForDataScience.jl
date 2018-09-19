@@ -10,7 +10,7 @@ before_install:
 install:
   - gitbook install
 script:
-  - julia -e 'import Pkg; Pkg.clone("https://github.com/joshday/Reproducible.jl")'
+  - julia -e 'import Pkg; Pkg.add("Glob"); Pkg.clone("https://github.com/joshday/Reproducible.jl")'
   - julia -e 'include("make.jl")'
   - gitbook build book/build
 deploy:
