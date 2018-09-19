@@ -1,6 +1,9 @@
 {
     "title": "Julia for Data Science",
     "plugins": [
-        "page-numbering"
+        "numbered-headings",
+        "page-numbering",
+        "folding-menu",
+        "katex"
     ]
 }
