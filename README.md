@@ -20,6 +20,8 @@ Click the "Edit on GitHub" button and make a pull request!
 
 ## Bigger Edits
 
-To generate the markdown with interpolated code, run the following in the git repo's root directory. 
+1. Clone the repo
+2. Generate the markdown by running the command below in the repo's root directory. 
+3. Make a pull request!
 
 `julia -e 'using Reproducible, Glob; Reproducible.build(glob("*.md"))'`
