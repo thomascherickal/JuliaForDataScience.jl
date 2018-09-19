@@ -1,0 +1,22 @@
+language: julia
+os:
+  - linux
+julia:
+  - 1.0
+notifications:
+  email: true
+before_install:
+  - npm install -g gitbook-cli
+install:
+  - gitbook install
+script:
+  - julia -e 'include("make.jl")'
+  - gitbook build book/build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  local-dir: book/build/_book
+  on:
+    branch: master
