@@ -16,3 +16,16 @@ made Julia:
 
 **Come for the speed, stay for the productivity.**
 
+## Julia is...
+
+### Fast
+
+### Dynamic
+
+### Optionally Typed
+
+### General
+
+### Technical
+
+### Composable
