@@ -1,6 +1,4 @@
-# Julia Basics
-
-## The REPL
+# The REPL
 
 Your first usage of Julia will probably be with the REPL (read-eval-print-loop).
 
@@ -12,9 +10,9 @@ julia> y = 2.0
 2.0
 ```
 
-## Types
+# Types
 
-## Multiple Dispatch
+# Multiple Dispatch
 
-## Package Management
+# Package Management
 
