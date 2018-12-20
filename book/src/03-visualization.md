@@ -1,6 +1,6 @@
 ![](https://julialang.org/images/waves.gif)
 
-```julia;hide;
+```@setup viz
 ENV["GKSwstype"] = "100"
 ```
 
@@ -9,13 +9,11 @@ ENV["GKSwstype"] = "100"
 There are a variety of data viz tools in Julia, but this chapter will focus on the [Plots](https://github.com/JuliaPlots/Plots.jl) package, which provides an interface for writing plot commands that work with multiple "backends", including [GR](https://github.com/jheinen/GR.jl) and [plotly](https://plot.ly)
 
 
-```julia;run;
-using Plots
+```@example
+using plots
 
 scatter(rand(10))
+png("plot1.png"); nothing # hide
 ```
 
-```julia;hide;
-png("plot1.png")
-```
 ![](plot1.png)

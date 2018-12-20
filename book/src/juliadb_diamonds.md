@@ -1,9 +1,6 @@
 # JuliaDB Tutorial: Diamonds
 
-```julia;run;
+```@example
 using JuliaDB, RDatasets
-```
-
-```julia;repl
 t = table(dataset("ggplot2", "diamonds"))
 ```
