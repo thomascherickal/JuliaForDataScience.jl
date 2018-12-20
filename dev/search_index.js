@@ -61,7 +61,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Plots.jl",
     "title": "Plots.jl",
     "category": "section",
-    "text": "There are a variety of data viz tools in Julia, but this chapter will focus on the Plots package, which provides an interface for writing plot commands that work with multiple \"backends\", including GR and plotlyusing plots\n\nscatter(rand(10))\npng(\"plot1.png\"); nothing # hide(Image: )"
+    "text": "There are a variety of data viz tools in Julia, but this chapter will focus on the Plots package, which provides an interface for writing plot commands that work with multiple \"backends\", including GR and plotlyusing Plots\n\nscatter(rand(10))\npng(\"plot1.png\"); nothing # hide(Image: )"
 },
 
 {
