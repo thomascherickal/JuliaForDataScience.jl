@@ -4,4 +4,6 @@
 * [Why Julia?](01-whyjulia.md)
 * [Julia Basics](02-juliabasics.md)
 * [Data Visualization](03-visualization.md)
-* [OnlineStats](xx-onlinestats.md)
+* [JuliaDB](juliadb.md)
+    * [Tutorial: Diamonds](juliadb_diamonds.md)
+* [OnlineStats](onlinestats.md)
