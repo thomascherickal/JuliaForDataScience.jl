@@ -1,0 +1,7 @@
+julia 1.0
+CSV
+JuliaDB
+OnlineStats
+RDatasets
+Plots
+StatPlots
