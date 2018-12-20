@@ -1,2 +1,4 @@
-![](http://docs.juliaplots.org/latest/examples/img/lorenz.gif)
+![](https://julialang.org/images/waves.gif)
+
+
 
