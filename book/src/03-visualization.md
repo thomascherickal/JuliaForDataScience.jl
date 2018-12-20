@@ -10,7 +10,7 @@ There are a variety of data viz tools in Julia, but this chapter will focus on t
 
 
 ```@example
-using plots
+using Plots
 
 scatter(rand(10))
 png("plot1.png"); nothing # hide
