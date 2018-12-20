@@ -1,5 +1,9 @@
 ![](https://julialang.org/images/waves.gif)
 
+```julia;hide;
+ENV["GKSwstype"] = "100"
+```
+
 # Plots.jl
 
 There are a variety of data viz tools in Julia, but this chapter will focus on the [Plots](https://github.com/JuliaPlots/Plots.jl) package, which provides an interface for writing plot commands that work with multiple "backends", including [GR](https://github.com/jheinen/GR.jl) and [plotly](https://plot.ly)
