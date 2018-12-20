@@ -13,5 +13,5 @@ jobs:
       script:
         - julia --project=book/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd()));
                                                Pkg.instantiate()'
-        - julia --project=book/ docs/make.jl
+        - julia --project=book/ book/make.jl
       after_success: skip
