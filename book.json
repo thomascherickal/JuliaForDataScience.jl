@@ -3,9 +3,16 @@
     "plugins": [
         "numbered-headings",
         "folding-menu",
-        "katex"
+        "katex",
+        "insert-logo"
     ],
     "theme-default": {
         "showLevel": false
+    },
+    "pluginsConfig": {
+        "insert-logo": {
+            "url": "https://github.com/JuliaGraphics/julia-logo-graphics/raw/master/images/julia-logo-325-by-225.png",
+            "style": "background: none;"
+        }
     }
 }
