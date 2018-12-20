@@ -6,13 +6,13 @@ julia:
 notifications:
   email: true
 script:
-  - julia -e 'import Pkg; Pkg.clone("https://github.com/joshday/Reproducible.jl"); Pkg.add("Glob")'
-  - julia -e 'using Reproducible, Glob; Reproducible.build(glob("*.md"))'
+  - julia -e 'import Pkg; Pkg.instantiate()'
+  - julia -e 'using Reproducible, Glob; Reproducible.build(glob("chapters/*.md"))'
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
-  local-dir: build
+  local-dir: chapters/build
   on:
     branch: master
