@@ -5,14 +5,13 @@ julia:
   - 1.0
 notifications:
   email: true
-script:
-  - julia -e 'import Pkg; Pkg.instantiate()'
-  - julia -e 'using Reproducible, Glob; Reproducible.build(glob("chapters/*.md"))'
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
-  local-dir: chapters/build
-  on:
-    branch: master
+jobs:
+  include:
+    - stage: "Documentation"
+      julia: 1.0
+      os: linux
+      script:
+        - julia --project=book/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd()));
+                                               Pkg.instantiate()'
+        - julia --project=book/ docs/make.jl
+      after_success: skip
